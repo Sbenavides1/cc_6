@@ -44,3 +44,26 @@ console.log(m1.describe());
 const m2 = new Manager("Maria", "Sales", 10);
 console.log(m2.describe());
 const m3 = new Manager("Carlos", "Development", 8);
+
+// COmpany Class
+class Company {
+    constructor(name) {
+        this.name = name;
+        this.employees = [];
+        console.log("Company:", this.name);
+    }
+
+addEmployee(employee) {
+    if (employee == null || !(employee.cunstructor === Employee || employee.constructor === Manager)) {
+        throw new Error("Invalid employee");
+    }
+    this.employees.push(employee);
+}
+listEmployees() {
+    for (let i in this.employees) {
+        const emp = this.employees[i];
+        console.log((number(i) + 1) + ". " + emp.describe());
+    }
+}
+}
+
