@@ -17,9 +17,14 @@ class Manager extends Employee {
     constructor(name, department, teamSize) {
         super(name, department);
         this.teamSize = teamSize;
+
+     console.log("Manager: " + this.name + ", Department: " + this.department + ", Team Size: " + this.teamSize);
+    
     }
 
 describe() {
-    return `${super.describe()} They manage a team of ${this.teamSize} people.`;
+    return `${super.describe()} They manage a team of ${this.teamSize} people.`;   
 }
 }
+
+//
