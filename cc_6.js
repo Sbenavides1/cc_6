@@ -5,6 +5,7 @@ class Employee {
     constructor(name, department) {
     this.name = name;
     this.department = department;
+    console.log("Employee: " + this.name + ", Department: " + this.department);
 }
 
 describe () {
