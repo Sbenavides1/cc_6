@@ -67,3 +67,15 @@ listEmployees() {
 }
 }
 
+// Initiate company and add people
+const myCompany = new Company("Looney Toons Inc.");
+myCompany.addEmployee(e1);
+myCompany.addEmployee(e2);
+myCompany.addEmployee(e3);
+myCompany.addEmployee(e4);
+myCompany.addEmployee(e5);
+myCompany.addEmployee(m1);
+myCompany.addEmployee(m2);
+myCompany.addEmployee(m3);
+
+myCompany.listEmployees();
