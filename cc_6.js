@@ -55,11 +55,11 @@ class Company {
     }
 
 addEmployee(employee) {
-    if (employee == null || !(employee.constructor === Employee || employee.constructor === Manager)) {
-        throw new Error("Invalid employee");
+    if (!(employee instanceof Employee)) {
+            throw new Error("Invalid employee");
+        }
+        this.employees.push(employee);
     }
-    this.employees.push(employee);
-}
 listEmployees() {
     for (let i in this.employees) {
         const emp = this.employees[i];
